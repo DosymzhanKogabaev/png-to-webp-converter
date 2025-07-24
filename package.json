@@ -1,0 +1,28 @@
+{
+    "name": "png-to-webp-converter",
+    "version": "1.0.0",
+    "description": "Конвертер PNG файлов в WebP формат",
+    "main": "png-to-webp.ts",
+    "scripts": {
+      "build": "tsc",
+      "convert": "ts-node png-to-webp.ts",
+      "upload": "ts-node upload-to-r2.ts",
+      "start": "npm run convert && npm run upload",
+      "dev": "ts-node"
+    },
+    "dependencies": {
+      "sharp": "^0.33.0",
+      "@aws-sdk/client-s3": "^3.450.0",
+      "@aws-sdk/credential-providers": "^3.450.0",
+      "dotenv": "^16.3.0"
+    },
+    "devDependencies": {
+      "@types/node": "^20.0.0",
+      "typescript": "^5.0.0",
+      "ts-node": "^10.9.0",
+      "wrangler": "^3.0.0"
+    },
+    "keywords": ["png", "webp", "converter", "image"],
+    "author": "",
+    "license": "MIT"
+  } 
