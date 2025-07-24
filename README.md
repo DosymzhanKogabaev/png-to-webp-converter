@@ -22,7 +22,7 @@ A project for batch conversion of PNG files to WebP format and automatic upload 
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/DosymzhanKogabaev/png-to-webp-converter.git
    cd png-to-webp
    ```
 
